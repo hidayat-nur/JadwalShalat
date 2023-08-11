@@ -4,6 +4,7 @@ import {styles} from './styles/HomeStyles';
 import Today from './_parts/Today';
 import Tomorrow from './_parts/Tomorrow';
 import TabBar from '../../components/general/TabBar';
+import CardSchedule from '../../components/general/CardSchedule';
 
 const HomeScreen = () => {
   const tabBarRoutes = [
@@ -21,8 +22,10 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>KEBUMEN</Text>
-      <Text style={styles.subtitle}>1 Jam 20 menit lagi menuju maghrib</Text>
+      <View style={styles.content}>
+        <Text style={styles.title}>KEBUMEN</Text>
+        <Text style={styles.subtitle}>1 Jam 20 menit lagi menuju maghrib</Text>
+      </View>
       <TabBar routesProps={tabBarRoutes} />
     </View>
   );

@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingVertical: 20,
-    paddingHorizontal: 15,
     backgroundColor: colors.semiWhite,
   },
   title: {
@@ -26,5 +25,8 @@ export const styles = StyleSheet.create({
     lineHeight: 24,
     letterSpacing: 0.38,
     marginTop: 10,
+  },
+  content: {
+    paddingHorizontal: 15,
   },
 });

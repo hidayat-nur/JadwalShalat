@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     height: 32,
     padding: 2,
     marginTop: 20,
+    marginHorizontal: 15,
   },
   tabBtn: {
     flex: 1,
