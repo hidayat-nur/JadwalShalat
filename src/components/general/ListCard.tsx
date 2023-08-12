@@ -1,14 +1,14 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import {styles} from './styles/CardScheduleStyles';
+import {styles} from './styles/ListCardStyles';
 
-interface ICardSchedule {
+interface IListCard {
   label: string;
   time: string;
   isLast: boolean;
 }
 
-const CardSchedule = ({label, time, isLast}: ICardSchedule) => {
+const ListCard = ({label, time, isLast}: IListCard) => {
   return (
     <View style={styles.container}>
       <View style={[styles.content, isLast && styles.lastContent]}>
@@ -19,4 +19,4 @@ const CardSchedule = ({label, time, isLast}: ICardSchedule) => {
   );
 };
 
-export default CardSchedule;
+export default ListCard;

@@ -1,6 +1,6 @@
 import {View} from 'react-native';
 import React from 'react';
-import CardSchedule from '../../../components/general/CardSchedule';
+import ListCard from '../../../components/general/ListCard';
 import {styles} from './styles/general';
 
 const Today = () => {
@@ -30,7 +30,7 @@ const Today = () => {
   return (
     <View style={styles.container}>
       {schedule.map((item: any, index: number, arr: any) => (
-        <CardSchedule
+        <ListCard
           label={item.label}
           time={item.time}
           key={index}
