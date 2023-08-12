@@ -4,7 +4,6 @@ import {styles} from './styles/HomeStyles';
 import Today from './_parts/Today';
 import Tomorrow from './_parts/Tomorrow';
 import TabBar from '../../components/general/TabBar';
-import CardSchedule from '../../components/general/CardSchedule';
 
 const HomeScreen = () => {
   const tabBarRoutes = [
